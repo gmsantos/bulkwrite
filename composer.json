@@ -1,0 +1,14 @@
+{
+    "name": "gmsantos/bulkwrite",
+    "type": "project",
+    "require": {
+        "ext-mongodb": "^1.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gmsantos",
+            "email": "gabriel.ms1@hotmail.com"
+        }
+    ]
+}

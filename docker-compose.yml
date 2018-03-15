@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  bulkwrite:
+    image: mongo:3.4
+    command: mongod --smallfiles
+    ports:
+      - '27017:27017'
+    volumes:
+      - db:/data/db
+
+volumes:
+  db:
+    driver: local
