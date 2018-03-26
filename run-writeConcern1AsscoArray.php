@@ -1,6 +1,9 @@
 <?php
 
+require 'listenQueries.php';
+
 $manager = new MongoDB\Driver\Manager();
+MongoDB\Driver\Monitoring\addSubscriber(new QueryTimeCollector(__FILE__));
 
 for ($j = 0; $j <= 40; $j++) {
     echo "\nPrepare for bulkwrite j={$j}";
